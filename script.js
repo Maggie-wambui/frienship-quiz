@@ -12,25 +12,25 @@
 // Each question needs: text, image, options (4 items), and correctIndex.
 const QUESTIONS = [
   { text: "What is my favorite breakfast?", image: "https://picsum.photos/seed/q1/900/500", options: ["Pancakes", "Omelette", "Cereal", "Fruit salad"], correctIndex: 0 },
-  { text: "Which music type do I enjoy most?", image: "https://picsum.photos/seed/q2/900/500", options: ["Afrobeat", "Pop", "Gospel", "Hip-hop"], correctIndex: 2 },
-  { text: "What time do I usually wake up?", image: "https://picsum.photos/seed/q3/900/500", options: ["5:00 AM", "6:30 AM", "8:00 AM", "10:00 AM"], correctIndex: 1 },
+  { text: "Which music type do I enjoy most?", image: "https://picsum.photos/seed/q2/900/500", options: ["Afrobeat", "Pop", "Gospel", "Hip-hop"], correctIndex: 3 },
+  { text: "What time do I usually wake up?", image: "https://picsum.photos/seed/q3/900/500", options: ["5:00 AM", "6:30 AM", "8:00 AM", "10:00 AM"], correctIndex: 2 },
   { text: "Which snack do I pick first?", image: "https://picsum.photos/seed/q4/900/500", options: ["Popcorn", "Chocolate", "Cookies", "Chips"], correctIndex: 3 },
   { text: "What is my favorite school subject?", image: "https://picsum.photos/seed/q5/900/500", options: ["Math", "English", "Science", "History"], correctIndex: 0 },
-  { text: "Which app do I open most often?", image: "https://picsum.photos/seed/q6/900/500", options: ["YouTube", "Instagram", "WhatsApp", "TikTok"], correctIndex: 2 },
-  { text: "What is my favorite drink?", image: "https://picsum.photos/seed/q7/900/500", options: ["Water", "Mango juice", "Coffee", "Tea"], correctIndex: 1 },
+  { text: "Which app do I open most often?", image: "https://picsum.photos/seed/q6/900/500", options: ["YouTube", "Instagram", "WhatsApp", "TikTok"], correctIndex: 3 },
+  { text: "What is my favorite drink?", image: "https://picsum.photos/seed/q7/900/500", options: ["Water", "Mango juice", "Coffee", "Tea"], correctIndex: 3 },
   { text: "Which sport do I like watching?", image: "https://picsum.photos/seed/q8/900/500", options: ["Football", "Basketball", "Tennis", "Rugby"], correctIndex: 0 },
-  { text: "What is my favorite season?", image: "https://picsum.photos/seed/q9/900/500", options: ["Summer", "Rainy", "Winter", "Spring"], correctIndex: 3 },
+  { text: "What is my favorite season?", image: "https://picsum.photos/seed/q9/900/500", options: ["Summer", "Rainy", "Winter", "Spring"], correctIndex: 0 },
   { text: "Which color do I wear most?", image: "https://picsum.photos/seed/q10/900/500", options: ["Black", "Blue", "White", "Green"], correctIndex: 0 },
-  { text: "What is my dream vacation place?", image: "https://picsum.photos/seed/q11/900/500", options: ["Bali", "Cape Town", "Dubai", "Tokyo"], correctIndex: 3 },
-  { text: "How do I spend free time?", image: "https://picsum.photos/seed/q12/900/500", options: ["Reading", "Gaming", "Cooking", "Napping"], correctIndex: 0 },
-  { text: "Which dessert do I love?", image: "https://picsum.photos/seed/q13/900/500", options: ["Ice cream", "Cake", "Donuts", "Pudding"], correctIndex: 1 },
-  { text: "What pet would I choose?", image: "https://picsum.photos/seed/q14/900/500", options: ["Dog", "Cat", "Parrot", "Fish"], correctIndex: 0 },
-  { text: "Which shoe style do I prefer?", image: "https://picsum.photos/seed/q15/900/500", options: ["Sneakers", "Boots", "Sandals", "Loafers"], correctIndex: 0 },
-  { text: "What kind of movies do I enjoy?", image: "https://picsum.photos/seed/q16/900/500", options: ["Action", "Comedy", "Romance", "Documentary"], correctIndex: 1 },
+  { text: "What is my dream vacation place?", image: "https://picsum.photos/seed/q11/900/500", options: ["Bali", "Cape Town", "Dubai", "Tokyo"], correctIndex: 2 },
+  { text: "How do I spend free time?", image: "https://picsum.photos/seed/q12/900/500", options: ["Reading", "Gaming", "Cooking", "Napping"], correctIndex: 3},
+  { text: "Which dessert do I love?", image: "https://picsum.photos/seed/q13/900/500", options: ["Ice cream", "Cake", "Donuts", "Pudding"], correctIndex: 0 },
+  { text: "What pet would I choose?", image: "https://picsum.photos/seed/q14/900/500", options: ["Dog", "Cat", "Parrot", "Fish"], correctIndex: 3 },
+  { text: "Which shoe style do I prefer?", image: "https://picsum.photos/seed/q15/900/500", options: ["Sneakers", "Boots", "Sandals", "Loafers"], correctIndex: 2 },
+  { text: "What kind of movies do I enjoy?", image: "https://picsum.photos/seed/q16/900/500", options: ["Action", "Comedy", "Romance", "Documentary"], correctIndex: 3 },
   { text: "What is my favorite fruit?", image: "https://picsum.photos/seed/q17/900/500", options: ["Apple", "Mango", "Banana", "Orange"], correctIndex: 1 },
   { text: "Which phone mode do I use most?", image: "https://picsum.photos/seed/q18/900/500", options: ["Dark mode", "Light mode", "Auto", "Battery saver"], correctIndex: 0 },
-  { text: "What is my favorite day of the week?", image: "https://picsum.photos/seed/q19/900/500", options: ["Monday", "Wednesday", "Friday", "Sunday"], correctIndex: 3 },
-  { text: "How would I describe myself?", image: "https://picsum.photos/seed/q20/900/500", options: ["Quiet", "Funny", "Focused", "Adventurous"], correctIndex: 2 }
+  { text: "What is my favorite day of the week?", image: "https://picsum.photos/seed/q19/900/500", options: ["Monday", "Wednesday", "Friday", "Sunday"], correctIndex: 2 } ,
+  { text: "How would I describe myself?", image: "https://picsum.photos/seed/q20/900/500", options: ["Quiet", "Funny", "Focused", "Adventurous"], correctIndex: 0 }
 ];
 
 const screen = document.getElementById("screen");
@@ -350,3 +350,4 @@ function decodeQuizData(encodedText) {
     return null;
   }
 }
+
