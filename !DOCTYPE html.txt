@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Who Knows Me Better</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="app">
+		<h1>Who Knows Me Better</h1>
+		<p class="subtitle">Create your own friendship quiz and share it with friends.</p>
+		<section id="screen"></section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
